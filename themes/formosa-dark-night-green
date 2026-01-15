@@ -1,0 +1,29 @@
+# Formosa Dark - Night Green
+# Inspired by Porsche 911 Carrera T "Formosa" Taiwan Limited Edition
+# https://github.com/peteryang1756/formosa-ghostty-theme
+
+background = #1a2822
+foreground = #e8e4df
+cursor-color = #6ABA7A
+selection-background = #3a5a4a
+selection-foreground = #e8e4df
+
+# Normal colors (0-7)
+palette = 0=#141f1a
+palette = 1=#e07070
+palette = 2=#6ABA7A
+palette = 3=#e0b050
+palette = 4=#5BBCD6
+palette = 5=#b080a0
+palette = 6=#8ADA9A
+palette = 7=#e8e4df
+
+# Bright colors (8-15)
+palette = 8=#5a7060
+palette = 9=#f09090
+palette = 10=#9AEAAA
+palette = 11=#f0c060
+palette = 12=#7BCCE6
+palette = 13=#c090b0
+palette = 14=#AAEABA
+palette = 15=#f0ece7
