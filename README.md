@@ -1,91 +1,121 @@
 # Formosa Theme for Ghostty
 
-A color theme for [Ghostty](https://ghostty.org/) terminal emulator, inspired by the **Porsche 911 Carrera T "Formosa" Taiwan Limited Edition**.
+A color theme for [Ghostty](https://ghostty.org/) terminal emulator, inspired by the [**Porsche 911 Carrera T "Formosa"**](https://www.porsche.com/taiwan/en/campaign/911-carrera-t-formosa/) — a one-of-one Sonderwunsch creation celebrating Taiwan's beauty.
 
-![Porsche 911 Carrera T Formosa](https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1080x624/dam/Taiwan/2024/Motorsports%20and%20Events/911%20Carrera%20T%20Formosa%20Taiwan%20Limited%20Edition/gallery/911-Carrera-T-Formosa-Taiwan-Limited-Edition-4.jpeg/jcr:content/911-Carrera-T-Formosa-Taiwan-Limited-Edition-4.jpeg)
+> "Formosa" — the name given to Taiwan by Portuguese sailors in the 16th century, meaning "Beautiful Island."
 
-## Theme Variants
+## Disclaimer
 
-| Variant | Description |
-|---------|-------------|
-| **Formosa Light - Ipanema Blue** | Light theme with cyan/teal accent inspired by Ipanema Blue |
-| **Formosa Light - Night Green** | Light theme with green accent inspired by Night Green Metallic |
-| **Formosa Dark - Ipanema Blue** | Dark theme with cyan/teal accent inspired by Ipanema Blue |
-| **Formosa Dark - Night Green** | Dark theme with green accent inspired by Night Green Metallic |
+This project is not affiliated with, endorsed by, or sponsored by Porsche AG. "Porsche", "911 Carrera T", and related marks are trademarks of Porsche AG. This theme is an independent fan creation inspired by publicly available images.
+
+## Themes
+
+| Theme | Appearance | Primary Color |
+|-------|------------|---------------|
+| **Formosa Light - Ipanema Blue** | Light | Ocean Blue |
+| **Formosa Light - Night Green** | Light | Forest Green |
+| **Formosa Dark - Ipanema Blue** | Dark | Ocean Night |
+| **Formosa Dark - Night Green** | Dark | Forest Night |
+
+## Screenshots
+
+### Formosa Light - Ipanema Blue
+
+![Formosa Light - Ipanema Blue](screenshots/light-ipanema-blue.png)
+
+### Formosa Light - Night Green
+
+![Formosa Light - Night Green](screenshots/light-night-green.png)
+
+### Formosa Dark - Ipanema Blue
+
+![Formosa Dark - Ipanema Blue](screenshots/dark-ipanema-blue.png)
+
+### Formosa Dark - Night Green
+
+![Formosa Dark - Night Green](screenshots/dark-night-green.png)
+
+## Color Palette
+
+All colors are extracted from the Porsche 911 Carrera T "Formosa", created by Porsche's Sonderwunsch (Special Wishes) program:
+
+### Source Colors
+
+| Color Name | HEX | Source | Role |
+|------------|-----|--------|------|
+| **Ipanema Blue** | `#1a8090` | Main body (Paint to Sample) | Cursor, Cyan (Blue themes) |
+| **Night Green** | `#2a7040` | Seat fabric pattern | Cursor, Cyan (Green themes) |
+| **Paldao Wood** | `#c49a3a` | Dashboard wood trim | Yellow |
+| **Truffle Brown** | `#b84a5a` | Interior leather | Red |
+| **Cream White** | `#f5f8fa` | Seat fabric pattern | Background (Light) |
+| **Ocean Night** | `#1a2332` | Night sky over ocean | Background (Dark Blue) |
+| **Forest Night** | `#1a2822` | Night sky over forest | Background (Dark Green) |
+
+### Theme Variants
+
+| Variant | Approach |
+|---------|----------|
+| **Light themes** | Subtle tinted backgrounds with saturated accents |
+| **Dark themes** | Deep backgrounds with vibrant highlights |
 
 ## Installation
 
-### Option 1: Copy to Ghostty themes directory
+### Quick Install
 
 ```bash
-# Create themes directory if it doesn't exist
-mkdir -p ~/.config/ghostty/themes
+mkdir -p ~/.config/ghostty/themes && \
+curl -fsSL https://raw.githubusercontent.com/peteryang1756/formosa-ghostty-theme/main/themes/formosa-dark-ipanema-blue -o ~/.config/ghostty/themes/formosa-dark-ipanema-blue && \
+curl -fsSL https://raw.githubusercontent.com/peteryang1756/formosa-ghostty-theme/main/themes/formosa-dark-night-green -o ~/.config/ghostty/themes/formosa-dark-night-green && \
+curl -fsSL https://raw.githubusercontent.com/peteryang1756/formosa-ghostty-theme/main/themes/formosa-light-ipanema-blue -o ~/.config/ghostty/themes/formosa-light-ipanema-blue && \
+curl -fsSL https://raw.githubusercontent.com/peteryang1756/formosa-ghostty-theme/main/themes/formosa-light-night-green -o ~/.config/ghostty/themes/formosa-light-night-green
+```
 
-# Copy theme files
+### Manual Installation
+
+1. Clone this repository
+2. Copy theme files to Ghostty themes directory:
+
+```bash
+mkdir -p ~/.config/ghostty/themes
 cp themes/* ~/.config/ghostty/themes/
 ```
 
-### Option 2: Clone repository
+### Usage
 
-```bash
-git clone https://github.com/peteryang1756/formosa-ghostty-theme.git
-cp formosa-ghostty-theme/themes/* ~/.config/ghostty/themes/
-```
-
-## Usage
-
-Add the theme to your Ghostty configuration file (`~/.config/ghostty/config`):
+Edit your Ghostty configuration (`~/.config/ghostty/config`):
 
 ```ini
-# Choose one of the following:
-theme = formosa-light-ipanema-blue
-# theme = formosa-light-night-green
-# theme = formosa-dark-ipanema-blue
-# theme = formosa-dark-night-green
+theme = formosa-dark-ipanema-blue
 ```
 
-### Auto-switch Light/Dark Mode
-
-You can configure Ghostty to automatically switch themes based on system appearance:
+### Auto Light/Dark Mode
 
 ```ini
 theme = light:formosa-light-ipanema-blue,dark:formosa-dark-ipanema-blue
 ```
 
-Or for Night Green variant:
+## Inspiration
 
-```ini
-theme = light:formosa-light-night-green,dark:formosa-dark-night-green
-```
+The [Porsche 911 Carrera T "Formosa"](https://www.porsche.com/taiwan/en/campaign/911-carrera-t-formosa/) is a unique Sonderwunsch creation celebrating Taiwan's natural beauty:
 
-## Color Palette
+- **Exterior**: Ipanema Blue Metallic with Suzuka Grey accents
+- **Interior**: Paldao wood trim, Truffle Brown & Black leather with Night Green stitching
+- **Special**: Custom "Formosa" checkered pattern in Night Green, Black, and Cream White
 
-### Ipanema Blue Variant
+### Design Philosophy
 
-The Ipanema Blue variant uses cyan/teal tones inspired by the exclusive Ipanema Blue exterior color.
-
-### Night Green Variant
-
-The Night Green variant uses rich green tones inspired by the Night Green Metallic paint option.
+- **Light themes**: Like sitting in the cream leather interior, looking out at Taiwan's coastline or mountains
+- **Dark themes**: Standing on Taiwan's coast or in its forests at night, with Porsche colors glowing under starlight
 
 ## Related Projects
 
-- [Formosa Theme for Zed](https://github.com/peteryang1756/formosa-zed-theme) - 100+ downloads
+- [Formosa Theme for Zed](https://github.com/peteryang1756/formosa-zed-theme)
 - [Formosa Theme for VS Code](https://github.com/peteryang1756/formosa-vscode-theme)
-
-## Inspiration
-
-This theme draws inspiration from the limited edition Porsche 911 Carrera T released exclusively for Taiwan in 2024, featuring:
-
-- **Ipanema Blue** - A distinctive cyan/teal color exclusive to this edition
-- **Night Green Metallic** - A deep, sophisticated green option
-- **Pebble Grey Leather** - Premium interior appointments
-- **"FORMOSA" Script** - Unique side decal celebrating Taiwan
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+MIT License - see [LICENSE](LICENSE) for details.
 
-## Author
+---
 
-Created by [Takeshi](https://github.com/peteryang1756)
+*Beautiful Island • 福爾摩沙 • 美麗之島*

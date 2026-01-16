@@ -2,10 +2,10 @@
 # Inspired by Porsche 911 Carrera T "Formosa" Taiwan Limited Edition
 # https://github.com/peteryang1756/formosa-ghostty-theme
 
-background = #fafaf8
+background = #f5f8fa
 foreground = #1a1d23
-cursor-color = #2a7080
-selection-background = #d4e8ec
+cursor-color = #1a8090
+selection-background = #c4e0e8
 selection-foreground = #1a1d23
 
 # Normal colors (0-7)
@@ -15,7 +15,7 @@ palette = 2=#3d7a5a
 palette = 3=#c49a3a
 palette = 4=#2a7a8a
 palette = 5=#8a5a7a
-palette = 6=#2a7080
+palette = 6=#1a8090
 palette = 7=#e8e8e6
 
 # Bright colors (8-15)
@@ -25,5 +25,5 @@ palette = 10=#5a9a6a
 palette = 11=#d4aa4a
 palette = 12=#4a9aaa
 palette = 13=#aa7a9a
-palette = 14=#3a8a9a
+palette = 14=#2a9aaa
 palette = 15=#f7f7f5
