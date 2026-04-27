@@ -64,10 +64,10 @@ All colors are extracted from the Porsche 911 Carrera T "Formosa", created by Po
 
 ```bash
 mkdir -p ~/.config/ghostty/themes && \
-curl -fsSL https://raw.githubusercontent.com/peteryang1756/formosa-ghostty-theme/main/themes/formosa-dark-ipanema-blue -o ~/.config/ghostty/themes/formosa-dark-ipanema-blue && \
-curl -fsSL https://raw.githubusercontent.com/peteryang1756/formosa-ghostty-theme/main/themes/formosa-dark-night-green -o ~/.config/ghostty/themes/formosa-dark-night-green && \
-curl -fsSL https://raw.githubusercontent.com/peteryang1756/formosa-ghostty-theme/main/themes/formosa-light-ipanema-blue -o ~/.config/ghostty/themes/formosa-light-ipanema-blue && \
-curl -fsSL https://raw.githubusercontent.com/peteryang1756/formosa-ghostty-theme/main/themes/formosa-light-night-green -o ~/.config/ghostty/themes/formosa-light-night-green
+curl -fsSL -o ~/.config/ghostty/themes/formosa-dark-ipanema-blue -o ~/.config/ghostty/themes/formosa-dark-ipanema-blue && \
+curl -fsSL [https://raw.githubusercontent.com/peteryang1756/formosa-ghostty-theme/main/themes/formosa-dark-night-green](https://github.com/takeshiyu/formosa-ghostty-theme/blob/main/themes/formosa-dark-night-green) -o ~/.config/ghostty/themes/formosa-dark-night-green && \
+curl -fsSL [https://raw.githubusercontent.com/peteryang1756/formosa-ghostty-theme/main/themes/formosa-light-ipanema-blue](https://github.com/takeshiyu/formosa-ghostty-theme/blob/main/themes/formosa-light-ipanema-blue) -o ~/.config/ghostty/themes/formosa-light-ipanema-blue && \
+curl -fsSL [https://raw.githubusercontent.com/peteryang1756/formosa-ghostty-theme/main/themes/formosa-light-night-green](https://github.com/takeshiyu/formosa-ghostty-theme/blob/main/themes/formosa-light-night-green) -o ~/.config/ghostty/themes/formosa-light-night-green
 ```
 
 ### Manual Installation
